@@ -1,13 +1,17 @@
-Privacy Policy - Asghans Live Status
+# Privacy Policy — Asghans Live Status
 
-This extension does not collect, store, or transmit any personal user data.
+*Last updated: October 2026*
 
-Data Collection: No personal information (emails, names, browsing history) is accessed.
+This extension does not collect, store, sell or share any personal data.
 
-Third-party Services: The extension connects only to the official Twitch API (helix) to retrieve public broadcast information.
+**What the extension does.** Every few minutes, it asks a small server we operate (a Cloudflare Worker) whether the Twitch channel "asghans" is live. The request contains no identifier, account, cookie or browsing data. The server answers with public information only: live status, stream title, game, viewer count and the channel's profile picture.
 
-Cookies: No cookies are used to track users.
+**Our server.** The server only queries the official Twitch API (Helix) for that single channel. It does not log or store requests. Like any website, the hosting provider (Cloudflare) technically processes the IP address in order to deliver the response; see [Cloudflare's privacy policy](https://www.cloudflare.com/privacypolicy/).
 
-Transparency: This extension is open-source and its behavior can be verified in the source code.
+**Local storage.** The extension stores the last known live status and stream details (title, category, viewer count, start time), the time of the last check, the channel's avatar URL and your theme choice in your browser's local extension storage. This data never leaves your device and is removed when you uninstall the extension.
 
-@Sokenzane.
+**Permissions.** `alarms` (periodic check), `notifications` (live alert), `storage` (local state), and access to our server's domain only.
+
+**No tracking.** No analytics, no advertising, no cookies, no third-party scripts.
+
+Contact: open an issue on the [privacy policy repository](https://github.com/Sokenzane/Asghans-Live-Tracker-Privacy-Markdown/issues), or reach @Sokenzane.
